@@ -160,7 +160,7 @@ function Resume() {
         ))}
       </ol>
 
-      <Button target="_blank" href="https://drive.google.com/file/d/1omFNdrgbrX5SR2-j1BY1xhZTeNDwKiDL/view"  variant="secondary" className="group mt-6 w-full">
+      <Button target="_blank" href="https://drive.google.com/file/d/1adg1NRNTLozr4lZOp7XsgzmvblJExjk7/view?usp=share_link"  variant="secondary" className="group mt-6 w-full">
         View CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>

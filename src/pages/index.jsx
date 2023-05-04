@@ -200,7 +200,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Mercy Ikpe - Frontend Developer
+          Mercy Ikpe - Fullstack Developer
         </title>
         <meta
           name="description"
@@ -210,10 +210,10 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Frontend Developer.
+            Fullstack Developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I specialize in building exceptional user experience by building responsive, secure and accessible web applications.
+            I build web applications with the <span className="font-medium underline decoration-pink-500/30">MERN</span> (MongoDB, ExpressJS, React JS, NodeJS) stack.
           </p>
           <div className="mt-6 flex gap-6">
 

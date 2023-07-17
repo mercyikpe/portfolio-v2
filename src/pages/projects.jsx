@@ -15,6 +15,7 @@ import sapientiaScreenshot from '@/images/logos/sapientia.png'
 import playScreenshot from '@/images/logos/play.png'
 import sightsoundsScreenshot from '@/images/logos/sightsounds.png'
 import aksCelebrationScreenshot from '@/images/logos/akscelebration.png'
+import rukah from '@/images/logos/rukah.png'
 // Tools
 import htmlLogo from '@/images/logos/html.png'
 import TailwindCSSLogo from '@/images/logos/tailwind.png'
@@ -30,6 +31,15 @@ import BitbucketLogo from '@/images/logos/bitbucket.svg'
 
 
 const projects = [
+  {
+    name: 'Rukah',
+    description:
+        'A rating system for wedding vendors.',
+    link: { href: 'https://rukah-fe.vercel.app', label: 'rukah-fe.vercel.app' },
+    logo: rukah,
+    tag: 'NodeJs, ExpressJS, React JS, Redux Toolkit, Redux Toolkit Query, TailwindCSS'
+  },
+
   {
     name: 'Play',
     description:

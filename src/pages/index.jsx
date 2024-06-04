@@ -11,7 +11,7 @@ import {
   TwitterIcon,
   GitHubIcon,
   LinkedInIcon,
-    FacebookIcon
+  FacebookIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpeg'
 import image2 from '@/images/photos/image-2.jpeg'
@@ -26,30 +26,36 @@ const notes = [
   {
     name: 'Managing custom font families using Tailwind CSS',
     description:
-        'Using this method, you can define custom fonts in any project even if the project is not using TailwindCSS. TailwindCSS adds an extra feature like utility class and arbitrary values for you to use in styling elements.',
-    link: { href: 'https://mercyikpe.hashnode.dev/managing-custom-font-families-using-tailwind-css-cl54hn8zf05r5ownv9m8924xx'},
-    date: 'July 3rd, 2022'
+      'Using this method, you can define custom fonts in any project even if the project is not using TailwindCSS. TailwindCSS adds an extra feature like utility class and arbitrary values for you to use in styling elements.',
+    link: {
+      href: 'https://mercyikpe.hashnode.dev/managing-custom-font-families-using-tailwind-css-cl54hn8zf05r5ownv9m8924xx',
+    },
+    date: 'July 3rd, 2022',
   },
   {
     name: 'Integrating Intercom in Vue3 app',
-    description:
-        'How I integrated Intercom in Vue3 app without a plugin',
-    link: { href: 'https://mercyikpe.hashnode.dev/integrating-intercom-in-vue3-app-cl20e8aqj04xky6nv5z5bc4bs'},
-    date: 'Apr 15, 2022'
+    description: 'How I integrated Intercom in Vue3 app without a plugin',
+    link: {
+      href: 'https://mercyikpe.hashnode.dev/integrating-intercom-in-vue3-app-cl20e8aqj04xky6nv5z5bc4bs',
+    },
+    date: 'Apr 15, 2022',
   },
   {
     name: '10k users: The Journey',
-    description:
-        'The journey from 1 user to 10k users on my side project.',
-    link: { href: 'https://mercyikpe.hashnode.dev/10k-users-the-journey-cl1qdcwbv01ibsvnv14kf9hjr'},
-    date: 'Mar 17, 2022'
+    description: 'The journey from 1 user to 10k users on my side project.',
+    link: {
+      href: 'https://mercyikpe.hashnode.dev/10k-users-the-journey-cl1qdcwbv01ibsvnv14kf9hjr',
+    },
+    date: 'Mar 17, 2022',
   },
   {
     name: 'Linear-gradient as border color in CSS',
     description:
-        'The usual way of implementing a border is to apply border properties to an element.',
-    link: { href: 'https://mercyikpe.hashnode.dev/linear-gradient-as-border-color-cl54i5jp50cfuconv2k8becce'},
-    date: 'Jan 8th, 2021'
+      'The usual way of implementing a border is to apply border properties to an element.',
+    link: {
+      href: 'https://mercyikpe.hashnode.dev/linear-gradient-as-border-color-cl54i5jp50cfuconv2k8becce',
+    },
+    date: 'Jan 8th, 2021',
   },
 ]
 
@@ -160,7 +166,12 @@ function Resume() {
         ))}
       </ol>
 
-      <Button target="_blank" href="https://drive.google.com/file/d/1adg1NRNTLozr4lZOp7XsgzmvblJExjk7/view?usp=share_link"  variant="secondary" className="group mt-6 w-full">
+      <Button
+        target="_blank"
+        href="https://drive.google.com/file/d/1OW34kGIOV32m8AlPcYowZF1Z2SpSxUE_/view?usp=drive_link"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         View CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -199,48 +210,56 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Mercy Ikpe - Fullstack Developer
-        </title>
+        <title>Mercy Ikpe - Software Developer</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Mercy MI, Software engineer with 5+ years of experience in front-end."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Fullstack Developer.
+            Halo, <br /> ich bin{' '}
+            <span className="font-medium underline decoration-pink-500/30">
+              Mercy
+            </span>
+            .
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I build web applications with the <span className="font-medium underline decoration-pink-500/30">MERN</span> (MongoDB, ExpressJS, React JS, NodeJS) stack.
+            Software engineer with 5+ years of experience in <b>front-end</b>.
+            <br />
+            Currently based Berlin, Germany.
           </p>
           <div className="mt-6 flex gap-6">
-
-            <SocialLink target="_blank"
-                        href="mailto:mercy@egberinde.com"
+            <SocialLink
+              target="_blank"
+              href="https://www.linkedin.com/in/mercyikpe"
+              aria-label="Follow on LinkedIn"
+              icon={LinkedInIcon}
+            />
+            <SocialLink
+              target="_blank"
+              href="mailto:mercy@egberinde.com"
               aria-label="Follow on Twitter"
               icon={EmailIcon}
             />
-            <SocialLink target="_blank"
+            <SocialLink
+              target="_blank"
               href="https://twitter.com/mercy_ikpe"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
-            <SocialLink target="_blank"
+            <SocialLink
+              target="_blank"
               href="https://www.facebook.com/mercy.ikpe.79"
               aria-label="Follow on Instagram"
               icon={FacebookIcon}
             />
-            <SocialLink target="_blank"
+            <SocialLink
+              target="_blank"
               href="https://github.com/mercyikpe"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
-            />
-            <SocialLink target="_blank"
-              href="https://www.linkedin.com/in/mercyikpe"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
             />
           </div>
         </div>
@@ -252,19 +271,20 @@ export default function Home({ articles }) {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {notes.map((note) => (
-                <Card as="li" key={note.name}>
-                  <h2 className="mt-2 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    <Card.Link target="_blank" href={note.link.href}>{note.name}</Card.Link>
-                  </h2>
-                  <Card.Description>{note.description}</Card.Description>
-                  <Card.Eyebrow as="time" dateTime={note.date} decorate>
-                    {note.date}
-                  </Card.Eyebrow>
+              <Card as="li" key={note.name}>
+                <h2 className="mt-2 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                  <Card.Link target="_blank" href={note.link.href}>
+                    {note.name}
+                  </Card.Link>
+                </h2>
+                <Card.Description>{note.description}</Card.Description>
+                <Card.Eyebrow as="time" dateTime={note.date} decorate>
+                  {note.date}
+                </Card.Eyebrow>
 
-                  <Card.Cta>Read article</Card.Cta>
-                </Card>
+                <Card.Cta>Read article</Card.Cta>
+              </Card>
             ))}
-
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/*<Newsletter />*/}
@@ -272,7 +292,6 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-
     </>
   )
 }

@@ -35,9 +35,18 @@ const projects = [
     name: 'Rukah',
     description:
         'A rating system for wedding vendors.',
-    link: { href: 'https://rukah-fe.vercel.app', label: 'rukah-fe.vercel.app' },
+    link: { href: 'https://rukah.co/', label: 'rukah.co' },
     logo: rukah,
     tag: 'NodeJs, ExpressJS, React JS, Redux Toolkit, Redux Toolkit Query, TailwindCSS'
+  },
+
+  {
+    name: 'An Online IDE for building PHP applications',
+    description:
+      'I collaborated with a group of other developers on this project, So I implemented the UI.',
+    link: { href: 'https://phpsandbox.io/', label: 'phpsanbox.io' },
+    logo: phpsandboxScreenshot,
+    tag: 'VueJS, VueX, TailwindCSS, SCSS, TypeScript'
   },
 
   {
@@ -48,78 +57,63 @@ const projects = [
     logo: playScreenshot,
     tag: 'VueJS, VueX, TailwindCSS, SCSS'
   },
-  {
-    name: 'Currency rates platform',
-    description:
-      'I implemented the Frontend for this website. Using the provided endpoint, I fetched the available currencies and the exchange rate of all currencies.',
-    link: { href: 'https://site2.pesapeer.com/', label: 'pesapeer.com' },
-    logo: pesapeerScreenshot,
-    tag: 'VueJS, VueX, TailwindCSS, SCSS, Intercom'
-  },
-  {
-    name: 'An Online IDE for building PHP applications',
-    description:
-      'I collaborated with a group of other developers on this project, So I implemented the UI.',
-    link: { href: 'https://phpsandbox.io/', label: 'phpsanbox.io' },
-    logo: phpsandboxScreenshot,
-    tag: 'VueJS, VueX, TailwindCSS, SCSS, TypeScript'
-  },
-  {
-    name: 'A design system for PHPSandbox',
-    description:
-      'I collaborated with other developers and built reusable components which are used to build the PHPSandbox and Play Platform.',
-    link: { href: 'https://ui.phpsandbox.io/', label: 'ui.phpsandbox.io' },
-    logo: uiPhpsandboxScreenshot,
-    tag: 'VueJS, TailwindCSS, SCSS, TypeScript'
-  },
-  {
-    name: 'Folarin Lawal - Portfolio',
-    description:
-      'Following a figma design, I implemented this responsive porfolio site and hosted it on Render.com.',
-    link: { href: 'https://www.folarinlawal.com/', label: 'folarinlawal.com' },
-    logo: folarinScreenshot,
-    tag: 'VueJS, TailwindCSS, SCSS'
-  },
-  {
-    name: 'kingsley Omin - Portfolio',
-    description:
-      'Following a figma design, I implemented this responsive porfolio site and hosted it on Render.com.',
-    link: { href: 'https://www.kingsleyomin.com/', label: 'kingsleyomin.com' },
-    logo: kingsleyScreenshot,
-    tag: 'VueJS, TailwindCSS, GetForm, SCSS'
-  },
-  {
-    name: 'Sapientia: Journal of Philosophy',
-    description:
-      'This Journal is built using Open Journal System.',
-    link: { href: 'https://sapientiajournaluniuyo.com/index.php/sapientia', label: 'sapientiajournaluniuyo.com' },
-    logo: sapientiaScreenshot,
-    tag: 'Open Journal Systems'
-  },
-  {
-    name: 'Akwa Ibom Celebrations',
-    description:
-      'A WordPress Site for the celebration of Top 35 people from 35 categories of business and services in Akwa Ibom State.',
-    link: { href: 'https://akssightsandsounds.ng', label: 'Call for celebration of Akwa Ibomites' },
-    logo: aksCelebrationScreenshot,
-    tag: 'Wordpress'
-  },
-  {
-    name: 'Akwa Ibom @35 - Sights and Sounds',
-    description:
-      'A WordPress Site for Photo and Video competition in celebration of Akwa Ibom @35.',
-    link: { href: 'https://akssightsandsounds.ng', label: 'Photography and video competition' },
-    logo: sightsoundsScreenshot,
-    tag: 'Wordpress'
-  },
-  {
-    name: 'Maintain Peace Movement, UK',
-    description:
-      'A WordPress Site for an NGO, an organization that promotes peace in its community.',
-    link: { href: 'https://maintainpeacemovementuk.org/', label: 'maintainpeacemovementuk.org' },
-    logo: mpm,
-    tag: 'Wordpress'
-  },
+  
+  // {
+  //   name: 'A design system for PHPSandbox',
+  //   description:
+  //     'I collaborated with other developers and built reusable components which are used to build the PHPSandbox and Play Platform.',
+  //   link: { href: 'https://ui.phpsandbox.io/', label: 'ui.phpsandbox.io' },
+  //   logo: uiPhpsandboxScreenshot,
+  //   tag: 'VueJS, TailwindCSS, SCSS, TypeScript'
+  // },
+  // {
+  //   name: 'Folarin Lawal - Portfolio',
+  //   description:
+  //     'Following a figma design, I implemented this responsive porfolio site and hosted it on Render.com.',
+  //   link: { href: 'https://www.folarinlawal.com/', label: 'folarinlawal.com' },
+  //   logo: folarinScreenshot,
+  //   tag: 'VueJS, TailwindCSS, SCSS'
+  // },
+  // {
+  //   name: 'kingsley Omin - Portfolio',
+  //   description:
+  //     'Following a figma design, I implemented this responsive porfolio site and hosted it on Render.com.',
+  //   link: { href: 'https://www.kingsleyomin.com/', label: 'kingsleyomin.com' },
+  //   logo: kingsleyScreenshot,
+  //   tag: 'VueJS, TailwindCSS, GetForm, SCSS'
+  // },
+  // {
+  //   name: 'Sapientia: Journal of Philosophy',
+  //   description:
+  //     'This Journal is built using Open Journal System.',
+  //   link: { href: 'https://sapientiajournaluniuyo.com/index.php/sapientia', label: 'sapientiajournaluniuyo.com' },
+  //   logo: sapientiaScreenshot,
+  //   tag: 'Open Journal Systems'
+  // },
+  // {
+  //   name: 'Akwa Ibom Celebrations',
+  //   description:
+  //     'A WordPress Site for the celebration of Top 35 people from 35 categories of business and services in Akwa Ibom State.',
+  //   link: { href: 'https://akssightsandsounds.ng', label: 'Call for celebration of Akwa Ibomites' },
+  //   logo: aksCelebrationScreenshot,
+  //   tag: 'Wordpress'
+  // },
+  // {
+  //   name: 'Akwa Ibom @35 - Sights and Sounds',
+  //   description:
+  //     'A WordPress Site for Photo and Video competition in celebration of Akwa Ibom @35.',
+  //   link: { href: 'https://akssightsandsounds.ng', label: 'Photography and video competition' },
+  //   logo: sightsoundsScreenshot,
+  //   tag: 'Wordpress'
+  // },
+  // {
+  //   name: 'Maintain Peace Movement, UK',
+  //   description:
+  //     'A WordPress Site for an NGO, an organization that promotes peace in its community.',
+  //   link: { href: 'https://maintainpeacemovementuk.org/', label: 'maintainpeacemovementuk.org' },
+  //   logo: mpm,
+  //   tag: 'Wordpress'
+  // },
 
 ]
 

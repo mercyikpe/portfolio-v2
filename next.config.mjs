@@ -11,6 +11,16 @@ const nextConfig = {
     newNextLinkBehavior: true,
     scrollRestoration: true,
   },
+  optimizeFonts: true,
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "res.cloudinary.com",
+            },
+        ],
+        minimumCacheTTL: 15000000,
+    },
 }
 
 const withMDX = nextMDX({

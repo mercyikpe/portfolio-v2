@@ -27,6 +27,7 @@ import VueLogo from '@/images/logos/Vue.svg'
 import GithubLogo from '@/images/logos/github.png'
 import GitLabLogo from '@/images/logos/GitLab.svg'
 import BitbucketLogo from '@/images/logos/bitbucket.svg'
+import TypeScriptLogo from '@/images/logos/ts.png'
 
 
 
@@ -155,12 +156,12 @@ export default function Projects() {
               <div className="shadow-md dark:shadow-[#040c16] rounded-sm py-5 flex justify-center">
                 <div>
                   <Image
-                      src={htmlLogo}
-                      className="w-12 h-10"
+                      src={TypeScriptLogo}
+                      className="w-12 h-10 mx-auto"
                       alt="A project made by me"
                       unoptimized
                   />
-                  <p className="text-center mt-3">HTML</p>
+                  <p className="text-center mt-3">TypeScript</p>
                 </div>
               </div>
 
@@ -168,7 +169,7 @@ export default function Projects() {
                 <div>
                   <Image
                       src={TailwindCSSLogo}
-                      className="w-12 h-10"
+                      className="w-12 h-10 mx-auto"
                       alt="A project made by me"
                       unoptimized
                   />
@@ -180,7 +181,7 @@ export default function Projects() {
                 <div>
                   <Image
                       src={BootstrapCSSLogo}
-                      className="w-12 h-10"
+                      className="w-12 h-10 mx-auto"
                       alt="A project made by me"
                       unoptimized
                   />
@@ -204,7 +205,7 @@ export default function Projects() {
                 <div>
                   <Image
                       src={JavaScriptLogo}
-                      className="w-12 h-10"
+                      className="w-12 h-10 mx-auto"
                       alt="A project made by me"
                       unoptimized
                   />

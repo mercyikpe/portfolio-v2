@@ -59,11 +59,6 @@ export default function About() {
                   alt="Mercy Ikpe"
                 />
               </div>
-
-              {/* <figure className="max-w-sm">
-                    <img className="aspect-auto	 rotate-3 rounded-2xl bg-zinc-100 object-fill dark:bg-zinc-800 filter grayscale hover:grayscale-0" src="https://res.cloudinary.com/mercyikpe/image/upload/v1667584913/portfolio/avatar.jpg"
-                         alt="Mercy Ikpe" />
-                </figure> */}
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
@@ -92,9 +87,8 @@ export default function About() {
                 applications.
               </p>
               <p>
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Outside of Software Development, I speak regularly at technology
-                conferences across Africa. I'm an Ex-Google Student Developer
+                conferences across Africa. An Ex-Google Student Developer
                 Lead, Ex-organiser of NodeJS Akwa Ibom, and also a member of{' '}
                 <a
                   href="https://starthub.com.ng/starthub-women"
